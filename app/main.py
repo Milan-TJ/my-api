@@ -9,3 +9,7 @@ def health():
 @app.post("/add")
 def add(a: int, b: int) -> dict:
     return {"result": a + b}
+
+@app.post("/sub")
+def sub(a: int, b: int) -> dict:
+    return {"result": a - b}
